@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/ishikari.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body ::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+header.asakusa{
+    height: 100px;
+    width: 170px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px, 10px;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover{
+    color: blue;
+}
+
+header nav ul li .contact{
+    display: block;
+    background-color: red;
+    padding: 10px, 20px;
+    border-radius: 10px;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+}
+
+main h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+main p{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+main .button-area{
+    margin-top: 40px;
+}
+
+.button-area button{
+    padding: 17px, 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: orange;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.button-area button:hover{
+    color:blue
+}
+button.free{
+    margin-right: 30px;
+}
+
+#cursor{
+    pointer-events: none;
+    height: 35px;
+    width: 35px;
+    background-color: lightcoral;
+    position: fixed;
+    top: -16px;
+    left: -16px;
+    border-radius: 50%;
+    transition: 0.13s;
+}
